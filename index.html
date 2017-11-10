@@ -14,53 +14,73 @@
         padding: 0;
         margin: 0;
         font-size: 16px;
+        font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
       }
       .ui.container {
         padding: 1rem;
       }
       h2 {
         text-align: center;
-        margin: 0;
       }
-      .ui.horizontal.list {
+      .ui.segment.item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+      }
+      .item .content {
+        margin-left: 10px;
+      }
+      .item .content a {
         font-size: 16px;
+        font-weight: bold;
       }
-      .ui.list.horizontal .description {
-        margin-top: 4px;
-        font-size: 14px;
+      .item .content .description {
+        font-size: 12px;
+        line-height: 1.5;
       }
     </style>
   </head>
   <body>
     <div class="ui container">
-      <h2 class="header">瞎玩做的玩意</h2>
-      <div class="ui horizontal list">
-        <div class="item">
-          <i class="large music icon"></i>
-          <div class="content">
-            <a href="vue-music/index.html" class="header">vue-music</a>
-            <div class="description">Vue.js 实现的音乐播放器</div>
+      <h2 class="header">瞎做的玩意</h2>
+      <div class="ui grid">
+        <div class="doubling stackable four column row">
+          <div class="column">
+            <div class="ui segment item">
+              <i class="large music icon"></i>
+              <div class="content">
+                <a href="vue-music/index.html" class="header">vue-music</a>
+                <div class="description">Vue.js 实现的音乐播放器</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <i class="large cube icon"></i>
-          <div class="content">
-            <a href="vue-cube/index.html" class="header">vue-cube</a>
-            <div class="description">Vue.js 实现的立体方块</div>
+          <div class="column">
+            <div class="ui segment item">
+              <i class="large cube icon"></i>
+              <div class="content">
+                <a href="vue-cube/index.html" class="header">vue-cube</a>
+                <div class="description">Vue.js 实现的立体方块</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <i class="large game icon"></i>
-          <div class="content">
-            <a href="vue-snake/index.html" class="header">vue-snake</a>
-            <div class="description">Vue.js 实现的贪吃蛇</div>
+          <div class="column">
+            <div class="ui segment item">
+              <i class="large game icon"></i>
+              <div class="content">
+                <a href="vue-snake/index.html" class="header">vue-snake</a>
+                <div class="description">Vue.js 实现的贪吃蛇</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <i class="large repeat icon"></i>
-          <div class="content">
-            <a href="vue-rotate/index.html" class="header">vue-rotate</a>
-            <div class="description">Vue.js 旋转组件(兼容ios/android的animation)</div>
+          <div class="column">
+            <div class="ui segment item">
+              <i class="large repeat icon"></i>
+              <div class="content">
+                <a href="vue-rotate/index.html" class="header">vue-rotate</a>
+                <div class="description">Vue.js 旋转组件(兼容ios/android的animation)</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
